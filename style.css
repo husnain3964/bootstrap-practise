@@ -1,0 +1,412 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navbar   ------------------------------------------------------------------------------------------------------------------------------------navber */
+.nav-link {
+    color: green !important;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+
+}
+
+.mybtn a:hover {
+    color: red !important;
+
+}
+
+
+.myNavv {
+
+    /* position: fixed !important; */
+
+    left: 0 !important;
+    width: 100%;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+
+    transition: all 0.3s ease-out;
+}
+
+
+.myNavv .nav-item {
+
+    padding: 0 1.3rem;
+    transition: all 200ms linear;
+
+
+}
+
+.navbar-toggler:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: maroon;
+}
+
+/* 
+.myNavv .scroll_on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 2px 2px 2px ghostwhite;
+    transition: all .15s ease-in-out 0s;
+} */
+
+/* navbar   ------------------------------------------------------------------------------------------------------------------------------------navber */
+
+
+
+/* section-2 ----------------------------------------------------------------------------------------------------------------------------------------section-2 */
+#home {
+    width: 100%;
+    height: 100vh;
+    margin-top: 2px;
+    background-image: url("./assets/bg-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+/* Default Styles */
+.text {
+    width: 50%;
+    padding: 100px 100px;
+}
+
+.h1 h1 {
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: .5px;
+    color: maroon;
+}
+
+.h1 p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(161, 108, 108);
+}
+
+.btn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.one {
+    background-color: maroon !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    margin: 10px;
+}
+
+.two {
+    padding: 10px 20px !important;
+    background-color: white !important;
+    color: maroon !important;
+    margin: 10px;
+}
+
+/* Media Query for tablets and small screens (min-width: 768px) */
+@media (max-width: 768px) {
+    .text {
+        width: 80%;
+        /* Adjust width for tablets */
+        padding: 50px 50px;
+        /* Reduce padding for smaller screens */
+    }
+
+    .h1 h1 {
+        font-size: 30px;
+        /* Reduce font size */
+    }
+
+    .h1 p {
+        font-size: 16px;
+        /* Reduce font size */
+    }
+
+    .btn {
+        flex-direction: column;
+        /* Stack buttons vertically */
+        align-items: center;
+    }
+
+    .one,
+    .two {
+        padding: 8px 16px;
+        /* Adjust padding */
+    }
+}
+
+/* Media Query for mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .text {
+        width: 90%;
+        /* Adjust width for mobile */
+        padding: 30px 20px;
+        /* Further reduce padding */
+    }
+
+    .h1 h1 {
+        font-size: 24px;
+        /* Further reduce font size */
+    }
+
+    .h1 p {
+        font-size: 14px;
+        /* Further reduce font size */
+    }
+
+    .btn {
+        flex-direction: column;
+        /* Keep buttons stacked vertically */
+        align-items: center;
+    }
+
+    .one,
+    .two {
+        padding: 6px 12px;
+        /* Further adjust padding */
+        margin: 5px;
+        /* Adjust margin */
+    }
+}
+
+/* section-2 ----------------------------------------------------------------------------------------------------------------------------------------section-2 */
+
+
+
+/* section 3----------------------------------------------------------------------------------------------------------------------------------------section 3 */
+.miniContainer {
+    width: 98%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+.third1 {
+    width: 48%;
+
+}
+
+.third1 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.third2 {
+    padding: 10px;
+    width: 48%;
+    display: grid;
+    place-content: center;
+}
+
+
+.h2 h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: maroon;
+    letter-spacing: 2px;
+}
+
+.h2 p {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: maroon;
+}
+
+
+
+
+@media screen and (max-width : 500px) {
+    
+    .miniContainer {
+        width: 98%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    
+    .third1 {
+        width: 100%;
+    
+    }
+    
+    .third1 img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .third2 {
+        padding: 10px;
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+    
+    
+    .h2 h1 {
+        font-size: 30px;
+        font-weight: bold;
+        color: maroon;
+        letter-spacing: 1px;
+    }
+    
+    .h2 p {
+        font-size: 10px;
+        letter-spacing: 1px;
+        color: maroon;
+    }
+    
+    
+    
+}
+
+
+
+
+@media screen and (max-width : 800px) {
+    
+    .miniContainer {
+        width: 98%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    
+    .third1 {
+        width: 100%;
+    
+    }
+    
+    .third1 img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .third2 {
+        padding: 10px;
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+    
+    
+    .h2 h1 {
+        font-size: 50px;
+        font-weight: bolder;
+        color: maroon;
+        letter-spacing: 2px;
+    }
+    
+    .h2 p {
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: maroon;
+    }
+    
+    
+    
+}
+
+
+
+
+/* section 3----------------------------------------------------------------------------------------------------------------------------------------section 3 */
+/* section 4----------------------------------------------------------------------------------------------------------------------------------------section 4 */
+.list1  ,.list2 ,.list3  {
+list-style: none !important;
+font-size: 15px !important;
+color:maroon !important;
+display: flex !important;
+flex-direction: column !important;
+align-items: flex-start;
+
+
+}
+
+
+/* section 4----------------------------------------------------------------------------------------------------------------------------------------section 4 */
+/* section 5----------------------------------------------------------------------------------------------------------------------------------------section 5 */
+
+.one11  ,.two22{ 
+width: 100%;
+}
+
+.one11  img  { 
+width: 80%;
+padding-top: 5rem;
+border-radius: 10px;
+}
+
+.two22  img  { 
+    width: 70%;
+    padding-top: 3rem;
+}
+
+@media screen and (max-width:  800px) {
+    .roww{
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+}
+/* section 5----------------------------------------------------------------------------------------------------------------------------------------section 5 */
+.img222{
+    width: 100% !important;
+    height: 500px !important;
+}
+
+.carousel{
+    width: 80% !important;
+    margin: auto !important;
+    border-radius: 40px !important;
+}
+
+
+@media screen  and (max-width:800px) {
+    .img222{
+        width: 100% !important;
+        height: 350px !important;
+    }
+    
+    .carousel{
+        width: 80% !important;
+        margin: auto !important;
+        border-radius: 40px !important;
+    }
+@media screen  and (max-width:500px) {
+    .img222{
+        width: 100% !important;
+        height: 200px !important;
+    }
+    
+    .carousel{
+        width: 80% !important;
+        margin: auto !important;
+        border-radius: 40px !important;
+    }
+
+}
